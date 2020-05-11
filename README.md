@@ -1,2 +1,2 @@
 # FPrepS3
-C++ Codes
+C++ is Awesome.
