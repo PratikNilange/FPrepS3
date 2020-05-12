@@ -1,21 +1,23 @@
 #include<iostream>
 using namespace std;
-int main(){
-  int in1, in2;
-  cin >> in1 >> in2;
-  int temp1 = in1 + in2;
+void perfnum(int n){
   int sum = 0;
-  for(int i = 1; i<temp1; i++){
-    if(temp1%i==0){
+  for(int i = 1; i<n; i++){
+    if(n%i==0){
       sum = sum + i;
     }
     else{
-      sum+=0;
+      sum = sum+0;
     }
   }
-  if(sum==temp1){
-    cout << "They can read the message";
+  if(sum==n){
+    cout << sum << " ";
   }
-  else
-    cout << "They can't read the message";
+}
+int main(){
+  int in1, in2;
+  cin >> in1 >> in2;
+  for(int i = in1; i< in2; i++){
+      perfnum(i);
+  }
 }
